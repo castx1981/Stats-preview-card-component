@@ -14,15 +14,19 @@
       theme: {
         extend: {
           colors: {
-            'pale-blue': 'hsl(225, 100%, 94%)',
-            'bright-blue': 'hsl(245, 75%, 52%)',
-            'very-pale-blue': 'hsl(225, 100%, 98%)',
-            'desaturated-blue': 'hsl(224, 23%, 55%)',
-            'dark-blue': 'hsl(223, 47%, 23%)',
+            'very-dark-blue': 'hsl(233, 47%, 7%)',
+            'dark-desaturated-blue': 'hsl(244, 38%, 16%)',
+            'soft-violet': 'hsl(277, 64%, 61%)',
           },
           fontFamily: {
             'inter': ['Inter', 'sans-serif'],
             'lexend-deca': ['"Lexend Deca"', 'sans-serif']
+          },
+          fontSize: {
+            'md': ['0.9375rem', {
+              lineHeight: '1.625',
+              fontWeight: '400',
+            }],
           },
         }
       }
@@ -30,14 +34,41 @@
   </script>
 </head>
 <body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
+<!--background container-->
+<div class="flex items-center justify-center min-h-screen bg-very-dark-blue">
+  <!--  card container  -->
+  <div class="mx-6 max-w-sm flex flex-col bg-soft-violet rounded-xl">
+    <!-- banner -->
+    <picture>
+      <source media="(min-width: 1280px)" srcset="images/image-header-desktop.jpg" />
+      <img class="flex-none rounded-t-lg mix-blend-multiply" src="images/image-header-mobile.jpg" alt="header"/>
+    </picture>
+    <!-- content -->
+    <div class="flex-none px-6 py-10 bg-dark-desaturated-blue rounded-b-lg">
+      <h1 class="font-inter font-bold text-3xl text-white text-center">
+        Get <span class="text-soft-violet">insights</span> that help your business grow.
+      </h1>
+      <p class="mt-6 px-2 font-inter text-white/75 text-md text-center">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.
+      </p>
+      <!-- stats -->
+      <div class="mt-10 flex flex-col justify-center items-center space-y-8">
+        <div class="flex flex-col items-center">
+          <h1 class="font-inter font-bold text-2xl text-white">10k+</h1>
+          <p class="p-1.5 uppercase font-lexend-deca text-xs text-white/60 tracking-wider">companies</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h1 class="font-inter font-bold text-2xl text-white">314</h1>
+          <p class="p-1.5 uppercase font-lexend-deca text-xs text-white/60 tracking-wider">templates</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h1 class="font-inter font-bold text-2xl text-white">12m+</h1>
+          <p class="p-1.5 uppercase font-lexend-deca text-xs text-white/60 tracking-wider">queries</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
