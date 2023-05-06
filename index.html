@@ -12,38 +12,42 @@
 </head>
 <body>
 <!--Global Container-->
-<div class="flex items-center justify-center min-h-screen bg-very-dark-blue">
+<div class="flex items-center justify-center min-h-screen bg-veryDarkBlue">
   <!--  Card Container  -->
-  <div class="max-w-[327px] mx-6 my-10 flex flex-col bg-soft-violet rounded-xl xl:max-w-full xl:flex-row-reverse">
-    <!-- Banner -->
-    <picture>
-      <source media="(min-width: 1280px)" srcset="images/image-header-desktop.jpg" />
-      <img class="rounded-t-lg mix-blend-multiply xl:rounded-r-lg xl:rounded-l-none xl:w-full xl:h-full"
-           src="images/image-header-mobile.jpg"
-           alt="header"/>
-    </picture>
-    <!-- Content Container -->
-    <div class="px-6 py-10 bg-dark-desaturated-blue rounded-b-lg xl:pl-20 xl:pr-24 xl:py-16 xl:w-[36rem] xl:rounded-l-lg xl:rounded-r-none">
-      <h1 class="font-inter font-bold text-3xl text-white text-center xl:text-4xl xl:text-left">
-        Get <span class="text-soft-violet">insights</span> that help your business grow.
-      </h1>
-      <p class="mt-6 px-2 font-inter text-white/75 text-body text-center xl:text-left xl:mt-8 xl:px-0 xl:pr-4">
-        Discover the benefits of data analytics and make better decisions regarding revenue, customer
-        experience, and overall efficiency.
-      </p>
-      <!-- stats -->
-      <div class="mt-10 flex flex-col justify-between items-center space-y-8 xl:mt-20 xl:pr-14 xl:flex-row xl:space-y-0">
-        <div class="flex flex-col items-center xl:items-start">
-          <h1 class="font-inter uppercase font-bold text-2xl text-white">10k+</h1>
-          <p class="pt-1.5 uppercase font-lexend-deca text-xs text-white/60 tracking-wider">companies</p>
+  <div class="max-w-[327px] shadow-xl shadow-darkBlue xl:max-w-fit xl:flex xl:flex-row-reverse">
+    <!-- Banner Area -->
+    <div class="bg-softViolet rounded-t-lg xl:w-[540px] xl:rounded-none xl:rounded-r-lg">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="images/image-header-desktop.jpg" />
+        <img class="rounded-t-lg mix-blend-multiply xl:rounded-none xl:rounded-r-lg"
+             src="images/image-header-mobile.jpg"
+             alt=""/>
+      </picture>
+    </div>
+    <!-- Content Area -->
+    <div class="px-8 pt-10 pb-8 bg-darkDesaturatedBlue rounded-b-lg xl:w-[570px] xl:pl-18 xl:pt-18 xl:pr-24 xl:rounded-none xl:rounded-l-lg">
+      <div class="font-inter text-center xl:text-left">
+        <h1 class="font-bold text-[1.75rem]/[1.14] text-white xl:text-4xl/[1.22]">
+          Get <span class="text-softViolet">insights</span> that help your business grow.
+        </h1>
+        <p class="mt-4 text-[0.9375rem]/[1.67] text-white/75 xl:mt-6 xl:pr-7">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
+      </div>
+      <!-- Stats -->
+      <div class="mt-10 flex flex-col items-center space-y-6 xl:mt-18 xl:flex-row xl:space-y-0 xl:space-x-16">
+        <div class="stats-section">
+          <h2>10k+</h2>
+          <h3>companies</h3>
         </div>
-        <div class="flex flex-col items-center xl:items-start">
-          <h1 class="font-inter uppercase font-bold text-2xl text-white">314</h1>
-          <p class="pt-1.5 uppercase font-lexend-deca text-xs text-white/60 tracking-wider">templates</p>
+        <div class="stats-section">
+          <h2>314</h2>
+          <h3>templates</h3>
         </div>
-        <div class="flex flex-col items-center xl:items-start">
-          <h1 class="font-inter uppercase font-bold text-2xl text-white">12m+</h1>
-          <p class="pt-1.5 uppercase font-lexend-deca text-xs text-white/60 tracking-wider">queries</p>
+        <div class="stats-section">
+          <h2>12M+</h2>
+          <h3>queries</h3>
         </div>
       </div>
     </div>
